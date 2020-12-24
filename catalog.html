@@ -6,6 +6,7 @@
   <title>Магазин</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-catalog.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
@@ -81,59 +82,69 @@
   </header>
 
   <main class="main">
-    <section class="name">
-      <img class="name__img" src="img/layer-57.jpg" alt="Мужчина в куртке">
-      <div class="name__content">
-        <div class="name__header">
-          <h1>the brand</h1>
-          <h2>of luxerious <span class="colortext">fashion</span></h2>
-        </div>
-      </div>
-    </section>
-
-    <section class="stock container">
-      <h3 class="visually-hidden">Stock</h3>
-      <div class="stock__offer">
-        <a class="stock__item" href="catalog.html">
-            <p class="stock__offer-text">30% off</p>
-            <p class="stock__offer-for">for women</p>
-        </a>
-        <img class="stock__back" src="img/rectangle-20.svg" alt="Скидки для женщин">
-        <img src="img/layer-43.jpg" alt="Скидки для женщин">
-      </div>
-
-      <div class="stock__offer">
-        <a class="stock__item" href="catalog.html">
-            <p class="stock__offer-text">HOT DEAL</p>
-            <p class="stock__offer-for">for men</p>
-        </a>
-        <img class="stock__back" src="img/rectangle-20.svg" alt="Скидки для мужчин">
-        <img src="img/layer-30.jpg" alt="Скидки для мужчин">
-      </div>
-
-      <div class="stock__offer">
-        <a class="stock__item" href="catalog.html">
-            <p class="stock__offer-text">NEW ARRIVALS</p>
-            <p class="stock__offer-for">for kids</p>
-        </a>
-        <img class="stock__back" src="img/rectangle-20.svg" alt="Скидки для детей">
-        <img src="img/layer-31.jpg" alt="Скидки для детей">
-      </div>
-
-      <div class="stock__offer stock__offer-last">
-        <a class="stock__item stock__item-last" href="catalog.html">
-            <p class="stock__offer-text stock__offer-lasttext">LUXIROUS & TRENDY</p>
-            <p class="stock__offer-for">ACCESORIES</p>
-        </a>
-        <img class="stock__back stock__back-last" src="img/rectangle-21.svg" alt="Аксессуары люкс">
-        <img src="img/layer-32.jpg" alt="Аксессуары люкс">
+    <section class="catalog">
+      <div class="catalog__header container">
+        <h5 class="catalog__name">new arrivals</h5>
+        <ul class="catalog__list">
+          <li class="catalog__item"><a href="#" class="catalog__link">home</a></li>
+          <li class="catalog__item">/</li>
+          <li class="catalog__item"><a href="#" class="catalog__link">men</a></li>
+          <li class="catalog__item">/</li>
+          <li class="catalog__item"><a href="#" class="catalog__link catalog__link--active">new arrivals</a></li>
+        </ul>
       </div>
     </section>
 
     <section class="featured container">
-      <div class="featured__title">
-        <h3 class="featured__name">Featured Items</h3>
-        <p class="featured__subtitle">Shop for items based on what we featured in this week</p>
+      <div class="filters">
+        <details class="filters__block">
+          <summary class="filter">filter</summary>
+          <details open>
+            <summary class="category">category</summary>
+            <ul class="category__list">
+              <li class="category__item">Accessories</li>
+              <li class="category__item">Bags</li>
+              <li class="category__item">Denim</li>
+              <li class="category__item">Hoodies & Sweatshirts</li>
+              <li class="category__item">Jackets & Coats</li>
+              <li class="category__item">Polos</li>
+              <li class="category__item">Shirts</li>
+              <li class="category__item">Shoes</li>
+              <li class="category__item">Sweaters & Knits</li>
+              <li class="category__item">T-Shirts</li>
+              <li class="category__item">Tanks</li>
+            </ul>
+          </details>
+          <details>
+            <summary class="category">brand</summary>
+            <ul class="category__list">
+              <li class="category__item">brand1</li>
+              <li class="category__item">brand2</li>
+              <li class="category__item">brand3</li>
+            </ul>
+          </details>
+          <details>
+            <summary class="category">designer</summary>
+            <ul class="category__list">
+              <li class="category__item">designer1</li>
+              <li class="category__item">designer2</li>
+              <li class="category__item">designer3</li>
+            </ul>
+          </details>
+        </details>
+
+        <div class="filters__block greyfilters">
+          <details>
+            <summary class="greyfilter">trending now</summary>
+          </details>
+          <details>
+            <summary class="greyfilter">size</summary>
+          </details>
+          <details>
+            <summary class="greyfilter">price</summary>
+          </details>
+        </div>
+        
       </div>
       
       <ul class="features">
