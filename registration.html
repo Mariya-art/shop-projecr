@@ -91,8 +91,8 @@
       <form action="#" class="reg__form">
         <fieldset class="reg__fieldset">
           <legend>Your Name</legend>
-          <input type="text" class="reg__fieldset-input" placeholder="First Name">
-          <input type="text" class="reg__fieldset-input" placeholder="Last Name">
+          <input type="text" class="reg__fieldset-input" required placeholder="First Name">
+          <input type="text" class="reg__fieldset-input" required placeholder="Last Name">
         </fieldset>
 
         <input type="radio" class="visually-hidden" name="gender" id="male" value="male">
@@ -111,7 +111,7 @@
         <p class="reg__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
       
         <button type="submit" class="join-button" value="join" onclick="#">
-          <p class="join-text">join now</p>
+          <span class="join-text">join now</span>
           </button>
       </form>
 
@@ -140,7 +140,7 @@
         <div class="subscribe__2">
           <p class="subscribe__2-title">subscribe</p>
           <p class="subscribe__2-text">for OUR NEWLETTER AND PROMOTION</p>
-          <form action="" method="GET" class="mail">
+          <form method="GET" class="mail">
             <input type="email" required class="email" placeholder="Enter Your Email">
             <button type="submit" class="subscribe__button" value="subscribe" onclick="#">Subscribe</button>
           </form>

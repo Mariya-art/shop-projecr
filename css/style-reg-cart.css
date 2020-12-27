@@ -134,7 +134,7 @@ input[type="radio"]:checked+.label-radio::before {
   height: 10px;
   background-image: url(../img/arrow-2.svg);
   top: 2px;
-  right: 18px;
+  left: 88px;
 }
 
 .reg__desc {
