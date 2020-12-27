@@ -77,12 +77,12 @@
   position: relative;
   width: 360px;
   height: 518px;
-  z-index: 1;
 }
 
 .filter[open] {
   box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
   background-color: var(--white-color);
+  z-index: 2;
 }
 
 .filter[open] .filter__name {
@@ -99,6 +99,7 @@
   padding-top: 13px;
   padding-right: 273px;
   padding-left: 16px;
+  outline-style: none;
 }
 
 .filter__name::-webkit-details-marker {
@@ -130,6 +131,7 @@
   padding-top: 24px;
   padding-left: 34px;
   padding-bottom: 25px;
+  outline-style: none;
 }
 
 .category__name::-webkit-details-marker {
@@ -157,18 +159,19 @@
   display: flex;
 }
 
-.greyfilter {
+.greyfilter__name {
   text-transform: uppercase;
   color: var(--darkgrey-color);
   padding-top: 13px;
   margin-left: 28px;
+  outline-style: none;
 }
 
-.greyfilter::-webkit-details-marker {
+.greyfilter__name::-webkit-details-marker {
   display: none;
 }
 
-.greyfilter::after {
+.greyfilter__name::after {
   background-image: url(../img/arrow.svg);
   content: '';
   float: right;
