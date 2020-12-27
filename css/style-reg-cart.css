@@ -100,7 +100,7 @@ input[type="radio"]:checked+.label-radio::before {
   margin-bottom: 39px;
 }
 
-.join__button {
+.join-button {
   width: 167px;
   height: 48px;
   color: var(--white-color);
@@ -112,22 +112,22 @@ input[type="radio"]:checked+.label-radio::before {
   vertical-align: middle;
 }
 
-.join__button:hover {
+.join-button:hover {
   color: var(--pink-color);
   background-color: transparent;
 }
 
-.join__button:hover .join__text::after {
+.join-button:hover .join-text::after {
   background-image: url(../img/arrow-2pink.svg);
   fill: var(--pink-color);
 }
 
-.join__text {
+.join-text {
   position: relative;
   font-weight: 400;
 }
 
-.join__text::after {
+.join-text::after {
   position: absolute;
   content: '';
   width: 17px;
