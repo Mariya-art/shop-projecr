@@ -1,0 +1,117 @@
+/*2-Catalog*/ /*Filters*/
+.filters {
+  position: relative;
+  height: 82px;
+  display: flex;
+  justify-content: start;
+  text-align: left;
+  padding-top: 38px;
+
+  .filter {
+    position: relative;
+    width: 360px;
+    height: 518px;
+  
+    &[open] {
+      box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
+      background-color: $white-color;
+      z-index: 2;
+    }
+  
+    &[open] .filter__name {
+      color: $pink-color;
+    }
+    
+    &[open] .filter__name::after {
+      background-image: url(../img/filter-pink.svg);
+    }    
+  }
+  
+  .filter__name {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 13px;
+    padding-right: 273px;
+    padding-left: 16px;
+    outline-style: none;
+  
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    &::after {
+      background-image: url(../img/filter.svg);
+      content: '';
+      float: right;
+      width: 15px;
+      height: 10px;
+      margin-top: 3px;
+      margin-left: 11px;
+    }
+  }
+  
+  .category {
+    position: relative;
+  
+    &[open] .category__name {
+      color: $pink-color;
+    }
+  }
+  
+  .category__name {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $darkgrey-color;
+    padding-top: 24px;
+    padding-left: 34px;
+    padding-bottom: 25px;
+    outline-style: none;
+  
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    &::before {
+      position: absolute;
+      content: '';
+      width: 322px;
+      height: 37px;
+      border-left: 5px solid $pink-color;
+      border-bottom: 1px solid $grey-color;
+      left: 16px;
+      top: 15px;
+    }
+  }
+  
+  .category__item {
+    color: $darkgrey-color;
+    padding-top: 11px;
+    padding-left: 34px;
+  }
+  
+  .greyfilters {
+    display: flex;
+  }
+  
+  .greyfilter__name {
+    text-transform: uppercase;
+    color: $darkgrey-color;
+    padding-top: 13px;
+    margin-left: 28px;
+    outline-style: none;
+  
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    &::after {
+      background-image: url(../img/arrow.svg);
+      content: '';
+      float: right;
+      width: 10px;
+      height: 5px;
+      margin-top: 6px;
+      margin-left: 10px;
+    }
+  }
+}

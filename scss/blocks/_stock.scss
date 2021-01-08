@@ -1,0 +1,64 @@
+/*Main - stock*/
+.stock {
+  @include flex-space-between;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  margin-bottom: 97px;
+  height: 470px;
+  
+  .stock__offer {
+    width: 360px;
+    height: 260px;
+    position: relative;
+  }
+
+  .stock__offer-last {
+    width: 1140px;
+    height: 180px;
+  }
+
+  .stock__item {
+    position: absolute;
+    text-align: center;
+    width: 360px;
+    height: 260px;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 1;
+    
+    &:hover {
+      background-color: rgba(244, 244, 244, 0.2);;
+    }
+  }
+
+  .stock__item-last {
+    width: 1140px;
+    height: 180px;
+  }
+
+  .stock__back {
+    position: absolute;
+    width: 360px;
+    height: 260px;
+  }
+
+  .stock__back-last {
+    width: 1140px;
+    height: 180px;
+  }
+
+  .stock__offer-text {
+    color: $white-color;
+    padding-top: 105px;
+    @include font(400, 16px, 19px);
+  }
+
+  .stock__offer-lasttext {
+    padding-top: 65px;
+  }
+
+  .stock__offer-for {
+    color: $pink-color;
+    @include font(700, 24px, 29px);
+  }
+}

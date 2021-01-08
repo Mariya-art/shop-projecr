@@ -1,0 +1,44 @@
+/*Main - name*/
+.name {
+  display: flex;
+
+  .name__img {
+    width: 800px;
+    height: 765px;
+  }
+  
+  .name__content {
+    width: 800px;
+    height: 765px;
+    background-color: $lightpink-color;
+  }
+  
+  .name__header {
+    position: relative;
+    padding-left: 16px;
+    margin: 335px 300px 0 76px;
+  
+    &::before {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 100%;
+      background-color: $pink-color;
+      left: -12px;
+    }
+  }
+  
+  h1 {
+    @include font(900, 48px, 58px);
+    text-transform: uppercase;
+  }
+  
+  .name__text {
+    @include font(700, 32px, 38px);
+    text-transform: uppercase;
+  }
+  
+  .colortext {
+    color: $pink-color;
+  }  
+}

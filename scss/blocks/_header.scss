@@ -1,0 +1,119 @@
+/*Header*/
+.header {
+  position: relative;
+  height: 75px;
+  background-color: $black-color;
+
+  .header__logo {
+    width: 44px;
+    height: 38px;
+    margin-right: 16px;
+  }
+
+  .header__button {
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+    margin-left: 25px;
+  }
+  
+  .icon {
+    fill: $grey-color;
+
+    &:hover {
+      fill: $pink-color;
+    }
+  }
+    
+  .header__container {
+    @include flex-center-space-between;
+    height: 100%;
+  }
+
+  .header__logo-wrp,
+  .header__list {
+    @include flex-center;
+  }
+
+  .header__cart {
+    position: relative;
+  }
+
+  .header__cart-circle {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: $pink-color;
+    color: $white-color;
+    text-align: center;
+    padding-top: 2px;
+  }
+
+  /*Header - Navigation*/
+  .header__nav {
+    position: absolute;
+    background-color: $white-color;
+    box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
+    width: 230px;
+    height: 765px;
+    left: 1370px;
+    top: 75px;
+    text-align: left;
+    z-index: 1;
+  }
+
+  .header__nav-cross {
+    padding: 16px 0 9px 203px;
+  }
+
+  .header__nav-title {
+    text-transform: uppercase;
+    @include font(700, 14px, 17px);
+    color: $black-color;
+    padding: 0 0 4px 34px;
+  }
+
+  .header__nav-item {
+    padding: 20px 0 0 33px;
+  }
+
+  .header__nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font(400, 14px, 17px);
+    color: $pink-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  
+    &:active {
+      text-decoration: underline;
+      color: $darkgrey-color;
+    }
+  }
+
+  .header__nav-sublist {
+    padding-top: 11px;
+    padding-left: 22px;
+  }
+
+  .header__nav-sublink {
+    text-decoration: none;
+    text-transform: none;
+    @include font(400, 14px, 17px);
+    color: $darkgrey-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  
+    &:active {
+      text-decoration: underline;
+      color: $pink-color;
+    }
+  }
+}

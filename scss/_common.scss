@@ -46,3 +46,53 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*Общие стили*/
+body {
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-style: normal;
+  @include font(300, 14px, 17px);
+  max-width: 1600px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Placeholder - текст подсказки*/
+::-webkit-input-placeholder { /* Google Chrome, Opera, Safari, Android */
+  @include placeholder;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  @include placeholder;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  @include placeholder;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  @include placeholder;
+}
+
+:-ms-input-placeholder { /* IE */
+  @include placeholder;
+}

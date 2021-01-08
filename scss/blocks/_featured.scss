@@ -1,0 +1,135 @@
+/*Main - featured*/
+.featured {
+  text-align: center;
+  
+  .featured__name {
+    @include font(400, 30px, 36px);
+    color: $black-color;
+  }
+
+  .featured__subtitle {
+    @include font(400, 14px, 17px);
+    color: $darkgrey-color;
+    margin-top: 6px;
+    margin-bottom: 48px;
+  }
+
+  .features{
+    @include flex-wrap-space-between;
+  }
+
+  .feature {
+    position: relative;
+    width: 360px;
+    height: 581px;
+    background-color: $grey2-color;
+    margin-bottom: 30px;
+    z-index: 1;
+
+    &:hover .feature__img {
+      filter: brightness(55%);
+    }
+
+    &:hover .feature__button {
+      @include flex-center;
+      justify-content: center;
+    }
+  }
+
+  .feature__button {
+    position: absolute;
+    display: none;
+    width: 138px;
+    height: 43px;
+    top: 188px;
+    left: 111px;
+    background-color: transparent;
+    color: $white-color;
+    border: 1px solid $white-color;
+    padding: 0;
+    
+    &:hover {
+      background-color: $pink-color;
+    }
+  }
+
+  .feature__button-text {
+    font-weight: 400;
+    margin-left: 11px;
+  }
+
+  .feature-pic2 {
+    position: absolute;
+    height: 400px;
+    top: 8px;
+    left: 108px;
+  }
+
+  .feature__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  
+    &:active {
+      text-decoration: underline;
+      color: $pink-color;
+    }
+  }
+
+  .feature__name {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 25px 0 13px 18px;
+    color: $black-color;
+    @include font(700, 13px, 16px);
+
+    &:active {
+      color: $pink-color;
+    }
+  }
+
+  .feature__desc {
+    text-align: left;
+    margin: 0 18px 18px 18px;
+    color: $darkgrey2-color;
+
+    &:active {
+      color: $pink-color;
+    }
+  }
+
+  .feature__price {
+    text-align: left;
+    margin-left: 18px;
+    color: $pink-color;
+    @include font(400, 16px, 19px);
+  }
+
+  .browse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .browse__button {
+    width: 211px;
+    height: 47px;
+    margin-top: 18px;
+    margin-bottom: 96px;
+    color: $pink-color;
+    outline: 1px solid $pink-color;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      color: $white-color;
+      background-color: $pink-color;
+    }
+  }
+
+  .browse__text {
+    @include font(400, 16px, 19px);
+    padding-top: 14px;
+  }
+}
