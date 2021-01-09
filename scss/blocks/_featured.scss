@@ -133,3 +133,183 @@
     padding-top: 14px;
   }
 }
+
+@media (max-width: 1200px) {
+  .featured {
+    margin-left: 16px;
+    margin-right: 16px;
+
+    .feature {
+      width: 31.6%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+
+    .feature__img {
+      width: 100%;
+      height: auto;
+    }
+
+    .feature-pic2 {
+      width: 40%;
+      height: auto;
+      top: 4px;
+      bottom: 4px;
+    }
+
+    .feature-pic2-back {
+      width: 100%;
+      height: auto;
+    }
+
+    .feature__price {
+      margin-bottom: 20px;
+    }
+
+    .browse__button {
+      margin-top: 16px;
+      margin-bottom: 65px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .featured {
+    .feature__button {
+      top: 175px;
+      left: 98px;
+    }
+
+    .feature-pic2 {
+      left: 100px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .featured {
+    .feature__button {
+      top: 150px;
+      left: 80px;
+    }
+
+    .feature-pic2 {
+      left: 82px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .featured {
+    .feature__button {
+      top: 130px;
+      left: 60px;
+    }
+
+    .feature-pic2 {
+      left: 68px;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .featured {
+    .feature__button {
+      top: 110px;
+      left: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .featured {
+    .featured__subtitle {
+      margin-bottom: 74px;
+    }
+
+    .feature {
+      width: 48.9%;
+    }
+
+    .feature__button {
+      top: 188px;
+      left: 111px;
+    }
+
+    .feature-pic2 {
+      left: 100px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .featured {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .features{
+      justify-content: center;
+    }
+
+    .featured__subtitle {
+      margin-bottom: 65px;
+    }
+
+    .feature {
+      width: 360px;
+    }
+
+    .feature__button {
+      top: 188px;
+      left: 111px;
+    }
+
+    .feature-pic2 {
+      left: 108px;
+    }
+
+    .browse__button {
+      margin-top: 25px;
+      margin-bottom: 96px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .featured {
+    .feature__button {
+      top: 160px;
+      left: 93px;
+    }
+
+    .feature-pic2 {
+      left: 91px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .featured {
+    .feature__button {
+      top: 140px;
+      left: 73px;
+    }
+
+    .feature-pic2 {
+      left: 73px;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .featured {
+    .feature__button {
+      top: 100px;
+      left: 43px;
+    }
+
+    .feature-pic2 {
+      left: 58px;
+    }
+  }
+}

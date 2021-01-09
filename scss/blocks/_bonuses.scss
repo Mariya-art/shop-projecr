@@ -59,3 +59,35 @@
     color: $white2-color;
   }
 }
+
+@media (max-width: 1000px) {
+  .bonuses {
+    height: auto;
+  
+    .bonuses__container {
+      align-items: center;
+      flex-direction: column;
+      margin: 0 14px 0 14px;
+    }
+    
+    .bonus {
+      width: 360px;
+    }
+
+    .bonus__img {
+      margin-top: 48px;
+    }
+
+    .bonus__desc-last {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@media (max-width: 388px) {
+  .bonuses {
+    .bonus {
+      width: 100%;
+    }
+  }
+}

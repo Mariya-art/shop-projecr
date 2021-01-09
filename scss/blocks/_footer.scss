@@ -2,6 +2,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   .footer-1 {
     position: relative;
@@ -9,6 +10,13 @@
     background-image: url(../img/layer-7.jpg);
   }
   
+  .footer__mobile {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
   .footer__back {
     position: absolute;
   }
@@ -20,7 +28,7 @@
     z-index: 2;
     margin-top: 87px;
   }
-  
+
   .subscribe__1 {
   width: 30%;
   }
@@ -129,5 +137,143 @@
   
   .social-icon {
     fill: $black-color;
+  }
+}
+
+@media (max-width: 1204px) {
+  .footer {
+    .subscribe {
+      flex-direction: column;
+      margin-top: 27px;
+    }
+
+    .subscribe__1 {
+      width: 50%;
+      }
+    
+    .subscribe__2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 48px;
+      }
+
+    .footer__bottom {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    height: 693px;
+
+    .footer-1 {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-image: none;
+    }
+
+    .footer__mobile {
+      width: 100%;
+      display: block;
+    }
+  
+    .footer__back {
+      display: none;
+    }
+
+    .subscribe {
+      margin-top: 87px;
+    }
+
+    .subscribe__2 {
+      margin-top: 68px;
+    }
+      
+    .footer-2 {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .footer {
+    height: 642px;
+      
+    .subscribe__1 {
+      width: 80%;
+    } 
+  }
+}
+
+@media (max-width: 660px) {
+  .footer {
+    height: 580px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: 650px;
+
+    .footer__mobile {
+      width: auto;
+      height: 550px;
+    }
+
+    .subscribe {
+      margin-top: 54px;
+    }
+          
+    .subscribe__1 {
+      width: 100%;
+    } 
+      
+    .subscribe__1-text {
+      margin-top: 30px;
+      @include font(400, 18px, 22px);
+    }
+      
+    .subscribe__2-text {
+      @include font(400, 14px, 21px);
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    input {
+      width: 303px;
+    }
+
+    .footer-2 {
+      height: 143px;
+    }
+
+    .footer__bottom {
+      flex-direction: column-reverse;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+
+    .copyright {
+      margin-bottom: 9px;
+      text-align: center;
+    }
+    
+    .footer__icons {
+      margin-top: 43px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .footer {
+    input {
+      width: 253px;
+    }
   }
 }
