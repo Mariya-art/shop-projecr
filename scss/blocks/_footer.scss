@@ -4,10 +4,10 @@
   flex-direction: column;
   justify-content: space-between;
 
-  .footer-1 {
+  .footer__subscribe {
     position: relative;
     height: 448px;
-    background-image: url(../img/layer-7.jpg);
+    background-image: url(../img/subscribe-img.jpg);
   }
   
   .footer__mobile {
@@ -29,31 +29,31 @@
     margin-top: 87px;
   }
 
-  .subscribe__1 {
+  .subscribe__quote {
   width: 30%;
   }
   
-  .subscribe__1-foto {
+  .subscribe__quote-photo {
   width: 96px;
   height: 96px;
   border-radius: 50%;
   }
   
-  .subscribe__1-text {
+  .subscribe__quote-text {
     margin-top: 30px;
     @include font(400, 20px, 24px);
   }
   
-  .subscribe__2 {
+  .subscribe__form {
     width: 50%;
   }
   
-  .subscribe__2-title {
+  .subscribe__form-title {
     @include font(700, 24px, 38px);
     text-transform: uppercase;
   }
   
-  .subscribe__2-text {
+  .subscribe__form-text {
     @include font(400, 18px, 30px);
     text-transform: uppercase;
     margin-bottom: 32px;
@@ -99,7 +99,7 @@
     border-radius: 0 23px 23px 0; 
   }
   
-  .footer-2 {
+  .footer__social {
     height: 75px;
     background-color: $black2-color;
   }
@@ -147,11 +147,11 @@
       margin-top: 27px;
     }
 
-    .subscribe__1 {
+    .subscribe__quote {
       width: 50%;
       }
     
-    .subscribe__2 {
+    .subscribe__form {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -170,7 +170,7 @@
   .footer {
     height: 693px;
 
-    .footer-1 {
+    .footer__subscribe {
       position: relative;
       width: 100%;
       height: auto;
@@ -190,11 +190,11 @@
       margin-top: 87px;
     }
 
-    .subscribe__2 {
+    .subscribe__form {
       margin-top: 68px;
     }
       
-    .footer-2 {
+    .footer__social {
       position: relative;
     }
   }
@@ -204,7 +204,7 @@
   .footer {
     height: 642px;
       
-    .subscribe__1 {
+    .subscribe__quote {
       width: 80%;
     } 
   }
@@ -229,16 +229,16 @@
       margin-top: 54px;
     }
           
-    .subscribe__1 {
+    .subscribe__quote {
       width: 100%;
     } 
       
-    .subscribe__1-text {
+    .subscribe__quote-text {
       margin-top: 30px;
       @include font(400, 18px, 22px);
     }
       
-    .subscribe__2-text {
+    .subscribe__form-text {
       @include font(400, 14px, 21px);
       text-transform: uppercase;
       margin-bottom: 22px;
@@ -248,7 +248,7 @@
       width: 303px;
     }
 
-    .footer-2 {
+    .footer__social {
       height: 143px;
     }
 
