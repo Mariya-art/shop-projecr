@@ -1,0 +1,93 @@
+/*Main - bonuses*/
+.bonuses {
+  height: 341px;
+  background-color: $black2-color;
+
+  .bonuses__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .bonus {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .bonus__link {
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+      color: $white-color;
+    }
+    
+    &:active {
+      text-decoration: underline;
+      color: $pink-color;
+    }
+    
+    &:active .bonus__name {
+      color: $pink-color;
+    }
+    
+    &:active .bonus__desc {
+      color: $pink-color;
+    }    
+  }
+  
+  .bonus__img {
+    margin-top: 103px;
+    padding-bottom: 28px;
+  }
+  
+  .bonus__img-2 {
+    padding-bottom: 19px;
+  }
+  
+  .bonus__img-3 {
+    padding-bottom: 25px;
+  }
+  
+  .bonus__name {
+    color: $white2-color;
+    @include font(400, 20px, 24px);
+    margin-bottom: 16px;
+  }
+  
+  .bonus__desc {
+    color: $white2-color;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bonuses {
+    height: auto;
+  
+    .bonuses__container {
+      align-items: center;
+      flex-direction: column;
+      margin: 0 14px 0 14px;
+    }
+    
+    .bonus {
+      width: 360px;
+    }
+
+    .bonus__img {
+      margin-top: 48px;
+    }
+
+    .bonus__desc-last {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@media (max-width: 388px) {
+  .bonuses {
+    .bonus {
+      width: 100%;
+    }
+  }
+}

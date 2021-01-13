@@ -1,0 +1,36 @@
+@mixin flex-center-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+@mixin flex-wrap-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin font($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin placeholder {
+  color: $grey4-color;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Lato', 'Arial', sans-serif;
+  text-transform: none;
+}
