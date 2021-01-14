@@ -7,7 +7,7 @@
   .footer__subscribe {
     position: relative;
     height: 448px;
-    background-image: url(../img/subscribe-img.jpg);
+    background-image: linear-gradient(180deg, rgba(244,244,244,0.7), rgba(244,244,244,0.7)), url(../img/subscribe-img.jpg);
   }
   
   .footer__mobile {
@@ -15,10 +15,6 @@
     width: 100%;
     height: auto;
     display: none;
-  }
-
-  .footer__back {
-    position: absolute;
   }
   
   .subscribe {
@@ -61,7 +57,7 @@
   
   .mail {
     display: inline-flex;
-    margin-left: 100px;
+    position: relative;
   }
   
   input {
@@ -87,9 +83,8 @@
   }
   
   .subscribe__button {
-    position: relative;
-    right: 100px;
-    padding-left: 0;
+    position: absolute;
+    right: 0;
     border: none;
     width: 100px;
     height: 49px;
@@ -168,67 +163,32 @@
 
 @media (max-width: 768px) {
   .footer {
-    height: 693px;
-
     .footer__subscribe {
       position: relative;
-      width: 100%;
-      height: auto;
-      background-image: none;
-    }
-
-    .footer__mobile {
-      width: 100%;
-      display: block;
-    }
-  
-    .footer__back {
-      display: none;
+      height: 693px;
+      background-image: linear-gradient(180deg, rgba(244,244,244,0.7), rgba(244,244,244,0.7)), url(../img/subscribe-img-tablet.jpg);
     }
 
     .subscribe {
-      margin-top: 87px;
+      margin-top: 54px;
     }
 
     .subscribe__form {
-      margin-top: 68px;
-    }
-      
-    .footer__social {
-      position: relative;
+      margin-top: 59px;
     }
   }
 }
 
 @media (max-width: 730px) {
   .footer {
-    height: 642px;
-      
     .subscribe__quote {
       width: 80%;
     } 
   }
 }
 
-@media (max-width: 660px) {
-  .footer {
-    height: 580px;
-  }
-}
-
 @media (max-width: 600px) {
   .footer {
-    height: 650px;
-
-    .footer__mobile {
-      width: auto;
-      height: 550px;
-    }
-
-    .subscribe {
-      margin-top: 54px;
-    }
-          
     .subscribe__quote {
       width: 100%;
     } 
@@ -266,6 +226,16 @@
     .footer__icons {
       margin-top: 43px;
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    .footer__subscribe {
+      position: relative;
+      height: 550px;
+      background-image: linear-gradient(180deg, rgba(244,244,244,0.7), rgba(244,244,244,0.7)), url(../img/subscribe-img-mobile.jpg);
     }
   }
 }

@@ -150,5 +150,123 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .page {
+    .page__name {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .reg {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .reg {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 40px;
+
+    .reg__form {
+      width: 50%;
+    }
+
+    .reg__desc {
+      @include font(300, 16px, 19px);
+      width: 50%;
+    }
+
+    .reg__title {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .reg {
+    .reg__form {
+      width: 53%;
+    }
+
+    .reg__desc {
+      width: 47%;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    .page__name {
+      padding-left: 8px;
+      padding-right: 8px;
+      text-align: center;
+    }
+  }
+
+  .reg {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    .reg__form {
+      width: 50%;
+    }
+
+    .reg__desc {
+      width: 50%;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .reg {
+    .reg__form {
+      width: 70%;
+    }
+
+    .reg__desc {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .reg {
+    .reg__form {
+      width: 100%;
+    }
+
+    .reg__fieldset-input {
+      width: 329px;
+    }
+
+    .reg__text {
+      width: 100%;
+    }
+
+    .reg__desc {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .reg {
+    .reg__fieldset-input {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .reg {
+    .reg__fieldset-input {
+      width: 230px;
+    }
+  }
 }
