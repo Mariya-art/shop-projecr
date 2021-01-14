@@ -85,6 +85,16 @@ button:focus {
 }
 
 /* Placeholder - текст подсказки*/
+::placeholder {
+  /* Modern browser */
+  color: #B1B1B1;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Lato', 'Arial', sans-serif;
+  text-transform: none;
+  opacity: 1;
+}
+
 ::-webkit-input-placeholder {
   /* Google Chrome, Opera, Safari, Android */
   color: #B1B1B1;
@@ -92,6 +102,7 @@ button:focus {
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: none;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
@@ -101,6 +112,7 @@ button:focus {
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: none;
+  opacity: 1;
 }
 
 :-moz-placeholder {
@@ -110,6 +122,7 @@ button:focus {
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: none;
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
@@ -119,6 +132,7 @@ button:focus {
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: none;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -128,6 +142,7 @@ button:focus {
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
   text-transform: none;
+  opacity: 1;
 }
 
 /*Header*/
