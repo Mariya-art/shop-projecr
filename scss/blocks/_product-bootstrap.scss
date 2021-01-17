@@ -1,0 +1,264 @@
+.product-bs {
+  .slide {
+    background-color: $grey2-color;
+  }
+}
+
+.card {
+  .card-title {
+    color: $pink-color;
+    text-transform: uppercase;
+    margin-top: 48px;
+    margin-bottom: 12px;
+  }
+
+  .split {
+    width: 63px;
+    height: 3px;
+    background-color: $pink-color;
+    margin-bottom: 12px;
+  }
+
+  .card-subtitle {
+    @include font(300, 18px, 22px);
+    color: $darknight;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  .card-text {
+    margin-bottom: 32px;
+    color: $darkgrey-color;
+  }
+
+  .card-price {
+    @include font(300, 24px, 29px);
+    color: $pink-color;
+    margin-bottom: 130px;
+  }
+
+  .btn-filter {
+    background-color: transparent;
+    @include font(400, 14px, 17px);
+    color: $darkgrey-color;
+    text-transform: uppercase;
+    border: none;
+    padding: 0;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 7rem;
+  }
+
+  .dropdown-item {
+    color: $darkgrey-color;
+  }
+
+  .btn-pink {
+    width: 211px;
+    height: 45px;
+    background-color: transparent;
+    color: $pink-color;
+    border: 1px solid $pink-color;
+    padding: 0;
+    margin-bottom: 48px;
+    
+    &:hover {
+      background-color: $pink-color;
+      color: $white-color;
+    }
+        
+    &:hover .cart-icon {
+      fill: $white-color;
+    }
+  }
+
+  .cart-icon {
+    fill: $pink-color;
+  }
+
+  .btn-pink__text {
+    font-weight: 400;
+    margin-left: 23px;
+  }
+}
+
+.featured-bs {
+  margin-top: 65px;
+  
+  .row {
+    --bs-gutter-x: 0;
+  }
+
+  .features-bs {
+    margin-bottom: 64px;
+  }
+
+  .feature-bs {
+    position: relative;
+    max-width: 350px;
+    height: auto;
+    background-color: $grey2-color;
+    z-index: 1;
+
+    &:hover .feature-bs__img {
+      filter: brightness(55%);
+    }
+
+    &:hover .feature-bs__button {
+      @include flex-center;
+      justify-content: center;
+    }
+  }
+
+  .feature-bs__button {
+    position: absolute;
+    display: none;
+    width: 138px;
+    height: 43px;
+    top: 188px;
+    left: 111px;
+    background-color: transparent;
+    color: $white-color;
+    border: 1px solid $white-color;
+    padding: 0;
+    
+    &:hover {
+      background-color: $pink-color;
+    }
+  }
+
+  .feature-bs__button-text {
+    font-weight: 400;
+    margin-left: 11px;
+  }
+
+  .feature-bs__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  
+    &:active {
+      text-decoration: underline;
+      color: $pink-color;
+    }
+  }
+
+  .feature-bs__name {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 25px 0 13px 18px;
+    color: $black-color;
+    @include font(700, 13px, 16px);
+
+    &:active {
+      color: $pink-color;
+    }
+  }
+
+  .feature-bs__desc {
+    text-align: left;
+    margin: 0 18px 18px 18px;
+    color: $darkgrey2-color;
+
+    &:active {
+      color: $pink-color;
+    }
+  }
+
+  .feature-bs__price {
+    text-align: left;
+    margin-left: 18px;
+    color: $pink-color;
+    @include font(400, 16px, 19px);
+  }
+}
+
+.footer {
+  .subscribe__button-bs {
+    position: absolute;
+    right: 0;
+    border: none;
+    width: 100px;
+    height: 45px;
+    color: $white-color;
+    @include font(400, 16px, 17px);
+    background-color: $pink-color;
+    border-radius: 0 23px 23px 0; 
+  }
+
+  .footer__bottom-bs {
+    height: 100%;
+    @include flex-center-space-between;
+  }
+
+  .footer__icon-bs {
+    width: 32px;
+    height: 32px;
+    background-color: $white-color;
+    margin-right: 7px;
+    text-align: center;
+    padding-top: 6px;
+  
+    &:hover {
+      background-color: $pink-color;
+    }
+  
+    &:hover .social-icon {
+      fill: $white-color;
+    }  
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .mt-n5 {
+  margin-top: -64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    .card-subtitle {
+      margin-bottom: 32px;
+    }
+
+    .card-text {
+      @include font(300, 14px, 20px);
+    }
+
+    .card-price {
+      margin-bottom: 82px;
+    }
+
+    .btn-filter {
+      @include font(400, 10px, 12px);
+    }
+  }
+  
+  .footer {
+    .footer__bottom-bs {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .featured-bs {
+    .features-bs {
+      margin-bottom: 128px;
+    }
+  }
+
+  .card {
+    .btn-pink {
+      margin-bottom: 113px;
+    }
+  }
+}

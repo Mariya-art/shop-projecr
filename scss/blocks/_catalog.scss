@@ -42,3 +42,21 @@
     }  
   }
 }
+
+@media (max-width: 1200px) {
+  .catalog {
+    .catalog__header {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .catalog {
+    .catalog__header {
+      padding: 24px 8px 46px 8px;
+      flex-direction: column;
+    }
+  }
+}
