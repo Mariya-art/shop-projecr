@@ -63,8 +63,8 @@
   input {
     width: 323px;
     height: 45px;
-    border: 1px solid $grey3-color;
-    background-color: $grey3-color;
+    border: 1px solid $lightsmoke-color;
+    background-color: $lightsmoke-color;
     padding-left: 19px;
     vertical-align: middle;
     color: $black-color;
@@ -96,7 +96,7 @@
   
   .footer__social {
     height: 75px;
-    background-color: $black2-color;
+    background-color: $black-color;
   }
   
   .footer__bottom {
@@ -105,7 +105,7 @@
   }
   
   .copyright {
-    color: $white2-color;
+    color: $lightwhite-color;
     @include font(400, 16px, 19px);
   }
   

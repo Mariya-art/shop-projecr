@@ -53,6 +53,7 @@ body {
   font-style: normal;
   @include font(300, 14px, 17px);
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .container {
@@ -78,7 +79,7 @@ button:focus {
 
 /* Placeholder - текст подсказки*/
 @include placeholder {
-  color: $grey4-color;
+  color: $smoke-color;
   font-size: 14px;
   font-weight: 300;
   font-family: 'Lato', 'Arial', sans-serif;
