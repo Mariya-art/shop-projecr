@@ -1,7 +1,7 @@
 /*2-Catalog*/
 .catalog {
   height: 148px;
-  background-color: $white3-color;
+  background-color: $darkwhite-color;
 
   .catalog__header {
     @include flex-center-space-between;
@@ -25,7 +25,7 @@
   .catalog__link {
     text-decoration: none;
     text-transform: uppercase;
-    color: $darkgrey3-color;
+    color: $night-color;
   
     &:hover {
       text-decoration: underline;

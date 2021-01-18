@@ -1,7 +1,7 @@
 /*Main - bonuses*/
 .bonuses {
   height: 341px;
-  background-color: $black2-color;
+  background-color: $black-color;
 
   .bonuses__container {
     display: flex;
@@ -50,13 +50,13 @@
   }
   
   .bonus__name {
-    color: $white2-color;
+    color: $lightwhite-color;
     @include font(400, 20px, 24px);
     margin-bottom: 16px;
   }
   
   .bonus__desc {
-    color: $white2-color;
+    color: $lightwhite-color;
   }
 }
 

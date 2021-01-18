@@ -1,6 +1,6 @@
 .product-bs {
   .slide {
-    background-color: $grey2-color;
+    background-color: $lightgrey-color;
   }
 }
 
@@ -21,7 +21,7 @@
 
   .card-subtitle {
     @include font(300, 18px, 22px);
-    color: $darknight;
+    color: $darknight-color;
     text-transform: uppercase;
     margin-bottom: 48px;
   }
@@ -89,7 +89,7 @@
 
 .featured-bs {
   margin-top: 65px;
-  
+
   .row {
     --bs-gutter-x: 0;
   }
@@ -102,7 +102,7 @@
     position: relative;
     max-width: 350px;
     height: auto;
-    background-color: $grey2-color;
+    background-color: $lightgrey-color;
     z-index: 1;
 
     &:hover .feature-bs__img {
@@ -165,7 +165,7 @@
   .feature-bs__desc {
     text-align: left;
     margin: 0 18px 18px 18px;
-    color: $darkgrey2-color;
+    color: $lightnight-color;
 
     &:active {
       color: $pink-color;

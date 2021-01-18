@@ -1,7 +1,7 @@
 /*3-Registration*/
 .page {
   height: 148px;
-  background-color: $white3-color;
+  background-color: $darkwhite-color;
 
   .page__name {
     text-transform: uppercase;
@@ -23,16 +23,16 @@
   .reg__fieldset {
     border: none;
     @include font(300, 17px, 19px);
-    color: $darkgrey2-color;
+    color: $lightnight-color;
   }
   
   .reg__fieldset-input {
     width: 339px;
     height: 45px;
-    border: 1px solid $grey5-color;
+    border: 1px solid $darksmoke-color;
     background-color: transparent;
     padding-left: 17px;
-    color: $darkgrey2-color;
+    color: $lightnight-color;
     @include font(300, 14px, 17px);
     border-radius: 0;
     margin-top: 20px;
@@ -52,7 +52,7 @@
     position: relative;
     display: inline-block;
     @include font(300, 13px, 13px);
-    color: $darkgrey2-color;
+    color: $lightnight-color;
     margin: 33px 0 35px 47px;
   
     &::before {
@@ -60,7 +60,7 @@
       content: '';
       width: 17px;
       height: 17px;
-      border: 1px solid $grey5-color;
+      border: 1px solid $darksmoke-color;
       border-radius: 50%;
       top: -6px;
       left: -27px;
@@ -72,12 +72,12 @@
   }
   
   input[type="radio"]:checked+.label-radio::before {
-    background-color: $grey3-color;
+    background-color: $lightsmoke-color;
   }
   
   .reg__text {
     width: 360px;
-    color: $grey4-color;
+    color: $smoke-color;
     margin-top: 15px;
     margin-bottom: 39px;
   }
