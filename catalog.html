@@ -123,15 +123,34 @@
         </details>
 
         <div class="greyfilters">
-          <details class="greyfilter">
-            <summary class="greyfilter__name">trending now</summary>
-          </details>
-          <details class="greyfilter">
-            <summary class="greyfilter__name">size</summary>
-          </details>
-          <details class="greyfilter">
-            <summary class="greyfilter__name">price</summary>
-          </details>
+          <div class="greyfilter">
+            <button class="greyfilter__name">trending now</button>
+            <ul class="greyfilter__list">
+              <li class="greyfilter__item"><input type="checkbox" name="Casual wear" value="Casual wear"><span class="greyfilter__text">Casual wear</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="Overdress" value="Overdress"><span class="greyfilter__text">Overdress</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="Accessories" value="Accessories"><span class="greyfilter__text">Accessories</span></li>
+            </ul>
+          </div>
+          
+          <div class="greyfilter">
+            <button class="greyfilter__name">size</button>
+            <ul class="greyfilter__list">
+              <li class="greyfilter__item"><input type="checkbox" name="XS" value="XS"><span class="greyfilter__text">XS</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="S" value="S"><span class="greyfilter__text">S</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="M" value="M"><span class="greyfilter__text">M</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="L" value="L"><span class="greyfilter__text">L</span></li>
+            </ul>
+          </div>
+
+          <div class="greyfilter">
+            <button class="greyfilter__name">price</button>
+            <ul class="greyfilter__list greyfilter__list-last">
+              <li class="greyfilter__item"><input type="checkbox" name="to100" value="to100"><span class="greyfilter__text">Up to $100</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="100-300" value="100-300"><span class="greyfilter__text">$100-300</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="300-500" value="300-500"><span class="greyfilter__text">$300-500</span></li>
+              <li class="greyfilter__item"><input type="checkbox" name="from500" value="from500"><span class="greyfilter__text">From $500</span></li>
+            </ul>
+          </div>
         </div>
       </div>
       

@@ -81,47 +81,64 @@
 
   <main class="main">
     <section class="page">
-        <h3 class="page__name container">shopping cart</h3>
+        <h1 class="page__name container">shopping cart</h1>
     </section>
 
-    <section class="reg container">
-      <form action="#" class="reg__form">
-        <fieldset class="reg__fieldset">
-          <legend>Your Name</legend>
-          <input type="text" class="reg__fieldset-input" required placeholder="First Name">
-          <input type="text" class="reg__fieldset-input" required placeholder="Last Name">
-        </fieldset>
+    <section class="cart">
+      <h2 class="visually-hidden">Cart of products</h2>
+      <div class="container cart__container">
+        <div class="cart__products">
+          <ul class="cart__list">
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart-product-1.jpg" alt="Мужская толстовка худи">
+              <div class="cart__item-desc">
+                <img class="cart__item-cross" src="img/cross.svg" alt="">
+                <h3 class="cart__item-name">mango people t-shirt</h3>
+                <p class="cart__item-text">Price: <span class="colortext">$300</span></p>
+                <p class="cart__item-text">Color: Red</p>
+                <p class="cart__item-text">Size: XL</p>
+                <p class="cart__item-text">Quantity: <span class="text-margin">2</span></p>
+              </div>
+            </li>
+            <li class="cart__item">
+              <img class="cart__item-img" src="img/cart-product-2.jpg" alt="Мужская рубашка">
+              <div class="cart__item-desc">
+                <img class="cart__item-cross" src="img/cross.svg" alt="">
+                <h3 class="cart__item-name">mango people t-shirt</h3>
+                <p class="cart__item-text">Price: <span class="colortext">$300</span></p>
+                <p class="cart__item-text">Color: Red</p>
+                <p class="cart__item-text">Size: XL</p>
+                <p class="cart__item-text">Quantity: <span class="text-margin">2</span></p>
+              </div>
+            </li>
+          </ul>
+          <div class="cart__buttons">
+            <button type="submit" class="cart-button" value="clear" onclick="#">
+              <span class="cart-button__text">clear shopping cart</span>
+            </button>
+            <a href="catalog.html" class="cart-button"><p class="cart-button__text">continue shopping</p></a>
+          </div>
+        </div>
 
-        <input type="radio" class="visually-hidden" name="gender" id="male" value="male">
-        <label for="male" class="label-radio label-radio1">Male</label>
-        <input type="radio" class="visually-hidden" name="gender" id="female" value="female">
-        <label for="female" class="label-radio">Female</label>
-        <input type="radio" class="visually-hidden" name="gender" id="other" value="other">
-        <label for="other" class="label-radio">Other</label>
-
-        <fieldset class="reg__fieldset">
-          <legend>Login details</legend>
-          <input type="email" class="reg__fieldset-input" required placeholder="Email">
-          <input type="password" class="reg__fieldset-input" required placeholder="Password">
-        </fieldset>
-
-        <p class="reg__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-      
-        <button type="submit" class="join-button" value="join" onclick="#">
-          <span class="join-text">join now</span>
+        <form action="#" class="cart__order">
+          <fieldset class="cart__fieldset">
+            <legend class="cart__fieldset-name">shipping address</legend>
+            <input type="text" class="cart__fieldset-input" required placeholder="City / Place">
+            <input type="text" class="cart__fieldset-input" required placeholder="State">
+            <input type="text" class="cart__fieldset-input" required placeholder="Postcode / Zip">
+          </fieldset>
+          <button type="submit" class="get-button" value="get-quote" onclick="#">
+            <span class="get-button__text">get a quote</span>
           </button>
-      </form>
-
-      <div class="reg__desc">
-        <h5 class="reg__title">loyalty has its perks</h5>
-        <p class="reg__subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-        <ul class="reg__bonus-list">
-          <li class="reg__bonus-item">15% off welcome offer</li>
-          <li class="reg__bonus-item">Free shipping, returns and exchanges on all orders</li>
-          <li class="reg__bonus-item">$10 off a purchase on your birthday</li>
-          <li class="reg__bonus-item">Early access to products</li>
-          <li class="reg__bonus-item">Exclusive offers & rewards</li>
-        </ul>
+          <div class="cart__order-total">
+            <p class="cart__order-subtotal">sub total <span class="text-margin">$900</span></p>
+            <p class="cart__order-grandtotal">grand total <span class="colortext text-margin text-bold">$900</span></p>
+            <div class="split"></div>
+            <button type="submit" class="proceed-button" value="proceed" onclick="#">
+              <span>proceed to checkout</span>
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
