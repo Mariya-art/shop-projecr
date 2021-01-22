@@ -71,15 +71,16 @@
     @include font(400, 16px, 17px);
     border-radius: 23px;
   
-    &:focus {
-      outline: none;
-      border: 1px solid $pink-color;
-    }
-  
-    &:active {
+    &:hover {
       outline: none;
       border: 1px solid rgba(241, 109, 127, 0.5);
-    }    
+    }
+  
+    &:focus,
+    &:active {
+      outline: none;
+      border: 1px solid $pink-color;
+    } 
   }
   
   .subscribe__button {

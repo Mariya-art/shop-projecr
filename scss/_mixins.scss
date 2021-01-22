@@ -21,6 +21,11 @@
   justify-content: space-between;
 }
 
+@mixin flex-start {
+  display: flex;
+  justify-content: start;
+}
+
 @mixin font($font-weight, $font-size, $line-height) {
   font-weight: $font-weight;
   font-size: $font-size;

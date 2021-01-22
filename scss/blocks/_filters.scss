@@ -64,7 +64,7 @@
     color: $darkgrey-color;
     padding-top: 24px;
     padding-left: 34px;
-    padding-bottom: 25px;
+    padding-bottom: 19px;
     outline-style: none;
   
     &::-webkit-details-marker {
@@ -92,17 +92,21 @@
   .greyfilters {
     display: flex;
   }
+
+  .greyfilter {
+    position: relative;
+  }
   
   .greyfilter__name {
+    height: 17px;
     text-transform: uppercase;
     color: $darkgrey-color;
-    padding-top: 13px;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 13px;
     margin-left: 28px;
-    outline-style: none;
-  
-    &::-webkit-details-marker {
-      display: none;
-    }
+    outline: none;
+    border: none;
     
     &::after {
       background-image: url(../img/arrow.svg);
@@ -113,5 +117,39 @@
       margin-top: 6px;
       margin-left: 10px;
     }
+
+    &:hover + .greyfilter__list {
+      display: block;
+    }
+  }
+  
+  .greyfilter__list {
+    position: absolute;
+    width: 75%;
+    height: 103px;
+    box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
+    background-color: $white-color;
+    top: 30px;
+    left: 27px;
+    padding: 9px;
+    z-index: 2;
+    display: none;
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  .greyfilter__list-last {
+    width: 120%;
+  }
+
+  .greyfilter__text {
+    margin-left: 5px;
+  }
+
+  .greyfilter__item {
+    color: $darkgrey-color;
+    padding-bottom: 9px;
   }
 }
