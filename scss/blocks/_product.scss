@@ -1,0 +1,260 @@
+.product {
+  .product__photo {
+    position: relative;
+    background-color: $lightgrey-color;
+  }
+
+  .product__img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product__img-big {
+    width: 100%;
+    height: auto;
+  }
+
+  .product__img-sm {
+    display: none;
+  }
+
+  .product__slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include flex-center-space-between;
+  }
+
+  .product__slider-link {
+    width: 13px;
+    height: 23px;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
+  }
+
+  .product__slider-prev {
+    fill: $black-color;
+  }
+
+  .product__slider-next {
+    fill: $pink-color;
+  }
+}
+
+.desc {
+  position: relative;
+  background: $white-color;
+  border: 1px solid $grey-color;
+  margin-top: -65px;
+  margin-bottom: 129px;
+
+  .desc__body {
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  .desc__title {
+    color: $pink-color;
+    text-transform: uppercase;
+    margin-top: 64px;
+    margin-bottom: 12px;
+  }
+
+  .split {
+    width: 63px;
+    height: 3px;
+    background-color: $pink-color;
+    margin-bottom: 12px;
+  }
+
+  .desc__subtitle {
+    @include font(300, 18px, 22px);
+    color: $darknight-color;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+  }
+
+  .desc__text {
+    width: 555px;
+    color: $darkgrey-color;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .desc__price {
+    @include font(300, 24px, 29px);
+    color: $pink-color;
+    margin-bottom: 130px;
+  }
+
+  .desc__filters {
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .desc__filter {
+    position: relative;
+  }
+  
+  .desc__filter-name {
+    height: 17px;
+    text-transform: uppercase;
+    color: $darkgrey-color;
+    background-color: transparent;
+    padding: 0;
+    margin-left: 23px;
+    outline: none;
+    border: none;
+    
+    &::after {
+      background-image: url(../img/arrow.svg);
+      content: '';
+      float: right;
+      width: 10px;
+      height: 5px;
+      margin-top: 6px;
+      margin-left: 10px;
+    }
+
+    &:hover + .desc__filter-list {
+      display: block;
+    }
+  }
+  
+  .desc__filter-list {
+    position: absolute;
+    width: 70%;
+    box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
+    background-color: $white-color;
+    top: 20px;
+    left: 22px;
+    padding: 9px;
+    z-index: 2;
+    display: none;
+
+    &:hover {
+      display: block;
+    }
+  }
+
+  .desc__filter-item {
+    color: $darkgrey-color;
+    padding-bottom: 9px;
+  }
+  
+  .desc__filter-text {
+    margin-left: 5px;
+  }
+
+  .desc__btn {
+    @include flex-center;
+    justify-content: center;
+    margin-bottom: 65px;
+  }
+
+  .desc__btn-pink {
+    @include flex-center;
+    justify-content: center;
+    width: 209px;
+    height: 45px;
+    background-color: transparent;
+    color: $pink-color;
+    border: 1px solid $pink-color;
+    
+    &:hover {
+      background-color: $pink-color;
+      color: $white-color;
+    }
+        
+    &:hover .cart-icon {
+      fill: $white-color;
+    }
+  }
+
+  .cart-icon {
+    fill: $pink-color;
+  }
+
+  .desc__btn-text {
+    font-weight: 400;
+    margin-left: 23px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .desc {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .product {
+    .product__photo {
+      height: 624px;
+      @include flex-center;
+      justify-content: center;
+    }
+
+    .product__img {
+      width: 374px;
+      height: auto;
+    }
+    
+    .product__img-big {
+      display: none;
+    }
+  
+    .product__img-sm {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .desc {
+    margin-bottom: 64px;
+
+    .desc__subtitle {
+      margin-bottom: 32px;
+    }
+
+    .desc__text {
+      width: 87%;
+      @include font(300, 14px, 20px);
+      margin-bottom: 32px;
+    }
+
+    .desc__price {
+      margin-bottom: 82px;
+    }
+
+    .desc__filters {
+      margin-bottom: 64px;
+    }
+    
+    .desc__filter-name {
+      @include font(400, 10px, 12px);
+      margin-left: 15px;
+      
+      &::after {
+        margin-top: 3px;
+        margin-left: 8px;
+      }
+    }
+
+    .desc__filter-list {
+      width: 60%;
+      left: 14px;
+      padding: 6px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .product {
+    .product__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

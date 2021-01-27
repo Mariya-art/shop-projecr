@@ -91,6 +91,7 @@
           <ul class="cart__list">
             <li class="cart__item">
               <img class="cart__item-img" src="img/cart-product-1.jpg" alt="Мужская толстовка худи">
+              <img class="cart__item-img-sm" src="img/cart-product-1-sm.jpg" alt="Мужская толстовка худи">
               <div class="cart__item-desc">
                 <img class="cart__item-cross" src="img/cross.svg" alt="">
                 <h3 class="cart__item-name">mango people t-shirt</h3>
@@ -102,6 +103,7 @@
             </li>
             <li class="cart__item">
               <img class="cart__item-img" src="img/cart-product-2.jpg" alt="Мужская рубашка">
+              <img class="cart__item-img-sm" src="img/cart-product-2-sm.jpg" alt="Мужская рубашка">
               <div class="cart__item-desc">
                 <img class="cart__item-cross" src="img/cross.svg" alt="">
                 <h3 class="cart__item-name">mango people t-shirt</h3>
@@ -114,22 +116,25 @@
           </ul>
           <div class="cart__buttons">
             <button type="submit" class="cart-button" value="clear" onclick="#">
-              <span class="cart-button__text">clear shopping cart</span>
+              <span class="cart-button__text">Clear shopping cart</span>
             </button>
-            <a href="catalog.html" class="cart-button"><p class="cart-button__text">continue shopping</p></a>
+            <a href="catalog.html" class="cart-button cart-button__last"><p class="cart-button__text">Continue shopping</p></a>
           </div>
         </div>
 
         <form action="#" class="cart__order">
-          <fieldset class="cart__fieldset">
-            <legend class="cart__fieldset-name">shipping address</legend>
-            <input type="text" class="cart__fieldset-input" required placeholder="City / Place">
-            <input type="text" class="cart__fieldset-input" required placeholder="State">
-            <input type="text" class="cart__fieldset-input" required placeholder="Postcode / Zip">
-          </fieldset>
-          <button type="submit" class="get-button" value="get-quote" onclick="#">
-            <span class="get-button__text">get a quote</span>
-          </button>
+          <div class="cart__order-address">
+            <fieldset class="cart__fieldset">
+              <legend class="cart__fieldset-name">shipping address</legend>
+              <input type="text" class="cart__fieldset-input" required placeholder="City / Place">
+              <input type="text" class="cart__fieldset-input" required placeholder="State">
+              <input type="text" class="cart__fieldset-input" required placeholder="Postcode / Zip">
+            </fieldset>
+            <button type="submit" class="get-button" value="get-quote" onclick="#">
+              <span class="get-button__text">get a quote</span>
+            </button>
+          </div>
+
           <div class="cart__order-total">
             <p class="cart__order-subtotal">sub total <span class="text-margin">$900</span></p>
             <p class="cart__order-grandtotal">grand total <span class="colortext text-margin text-bold">$900</span></p>

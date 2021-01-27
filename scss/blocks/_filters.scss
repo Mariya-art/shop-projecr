@@ -1,4 +1,4 @@
-/*2-Catalog*/ /*Filters*/
+/*Catalog - Filters*/
 .filters {
   position: relative;
   height: 82px;
@@ -126,7 +126,6 @@
   .greyfilter__list {
     position: absolute;
     width: 75%;
-    height: 103px;
     box-shadow: 6px 6px 14px rgba(98, 81, 81, 0.25), -1px -1px 10px rgba(98, 81, 81, 0.2);
     background-color: $white-color;
     top: 30px;
@@ -151,5 +150,144 @@
   .greyfilter__item {
     color: $darkgrey-color;
     padding-bottom: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    height: 66px;
+    justify-content: space-between;
+    padding-top: 11px;
+
+    .filter {
+      width: 320px;
+    }
+
+    .filter__name {
+      padding-right: 232px;
+    }
+
+    .category__name {
+      &::before {
+        width: 282px;
+      }
+    }
+
+    .greyfilter__name {
+      margin-left: 8px;
+
+      &::after {
+        margin-left: 5px;
+      }
+    }
+
+    .greyfilter__list {
+      width: 70%;
+      left: 0;
+      padding: 3px;
+    }
+
+    .greyfilter__list-last {
+      width: 110%;
+    }
+  
+    .greyfilter__text {
+      @include font(300, 12px, 14px);
+      margin-left: 1px;
+    }
+  
+    .greyfilter__item {
+      padding-bottom: 6px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .filters {
+    justify-content: center;
+
+    .filter {
+      width: 250px;
+    }
+
+    .filter__name {
+      padding-left: 8px;
+      padding-right: 170px;
+    }
+
+    .category__name {
+      padding-left: 20px;
+
+      &::before {
+        width: 212px;
+        left: 6px;
+      }
+    }
+
+    .category__item {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .filters {
+    .filter {
+      width: 140px;
+    }
+
+    .filter__name {
+      padding-right: 60px;
+    }
+
+    .category__name {
+      &::before {
+        width: 112px;
+      }
+    }
+
+    .category__item {
+      padding-top: 9px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .filters {
+    justify-content: space-between;
+
+    .filter {
+      width: 85px;
+      height: 470px;
+    }
+
+    .filter__name {
+      @include font(600, 12px, 14px);
+      padding-left: 6px;
+      padding-right: 17px;
+
+      &::after {
+        margin-left: 3px;
+      }
+    }
+
+    .category__name {
+      @include font(400, 12px, 14px);
+      padding-left: 15px;
+
+      &::before {
+        width: 68px;
+      }
+    }
+
+    .category__item {
+      @include font(300, 12px, 14px);
+      padding-top: 6px;
+      padding-left: 15px;
+    }
+
+    .greyfilter__name {
+      @include font(400, 12px, 14px);
+    }
   }
 }
