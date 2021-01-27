@@ -5,7 +5,12 @@
 
   .catalog__header {
     @include flex-center-space-between;
-    height: 100%;
+    height: 148px;
+  }
+
+  .catalog__header-bs {
+    @include flex-center-space-between;
+    height: 148px;
   }
   
   .catalog__name {
@@ -49,12 +54,23 @@
       padding-left: 16px;
       padding-right: 16px;
     }
+
+    .catalog__header-bs {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
 }
 
 @media (max-width: 760px) {
   .catalog {
     .catalog__header {
+      height: 78px;
+      padding: 24px 8px 46px 8px;
+      flex-direction: column;
+    }
+
+    .catalog__header-bs {
       padding: 24px 8px 46px 8px;
       flex-direction: column;
     }
